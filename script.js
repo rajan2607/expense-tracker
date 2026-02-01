@@ -4,7 +4,7 @@
 const BASE =
   window.location.hostname === "localhost"
     ? "http://localhost:5001"
-    : "https://YOUR-RENDER-APP.onrender.com"; // ← replace once
+    : "https://expense-tracker-it1u.onrender.com"; // ← replace once
 
 // ===============================
 // AUTH STATE
