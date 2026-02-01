@@ -1,0 +1,219 @@
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #0b0016, #1a0033);
+  color: #eae6f5;
+  min-height: 100vh;
+}
+
+/* =========================
+   AUTH CONTAINER
+========================= */
+
+.auth-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* =========================
+   BRAND PANEL
+========================= */
+
+.brand-panel {
+  flex: 1;
+  padding: 60px;
+  background: linear-gradient(160deg, #2a004d, #12001f);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  color: #d2b6ff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  font-size: 36px;
+  color: #b98bfd;
+}
+
+.tagline {
+  margin-top: 30px;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #f1eaff;
+}
+
+.feature-list {
+  margin-top: 30px;
+  font-size: 15px;
+  color: #d9ccff;
+}
+
+/* =========================
+   AUTH PANEL
+========================= */
+
+.auth-panel {
+  flex: 1;
+  background: #f7f5ff;
+  color: #1a0033;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.auth-panel h2 {
+  margin-bottom: 10px;
+}
+
+.auth-panel input {
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #cbb6ff;
+  font-size: 14px;
+}
+
+.auth-panel input:focus {
+  outline: none;
+  border-color: #7a2cff;
+}
+
+.auth-panel button {
+  background: linear-gradient(135deg, #7a2cff, #b98bfd);
+  border: none;
+  padding: 12px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.auth-panel button:hover {
+  opacity: 0.9;
+}
+
+.divider {
+  text-align: center;
+  margin: 20px 0;
+  color: #666;
+  font-size: 13px;
+}
+
+/* =========================
+   MAIN APP
+========================= */
+
+#appSection {
+  padding: 40px;
+}
+
+h1 {
+  color: #d2b6ff;
+  text-align: center;
+}
+
+section {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px auto;
+  max-width: 700px;
+  border: 1px solid rgba(185, 139, 253, 0.3);
+}
+
+section h2 {
+  color: #cfa8ff;
+}
+
+input {
+  padding: 10px;
+  margin: 6px 0;
+  width: calc(100% - 12px);
+}
+
+button {
+  margin-top: 10px;
+}
+
+/* =========================
+   LISTS
+========================= */
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: linear-gradient(135deg, #1a0033, #12001f);
+  padding: 12px;
+  border-radius: 8px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li button {
+  background: transparent;
+  border: 1px solid #ff4d6d;
+  color: #ff4d6d;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+/* =========================
+   EXPIRING
+========================= */
+
+.expiring {
+  border-left: 4px solid #ff4d6d;
+  box-shadow: 0 0 12px rgba(255, 77, 109, 0.5);
+}
+
+/* =========================
+   LOGOUT
+========================= */
+
+#logoutBtn {
+  background: #ff4d6d;
+  border: none;
+  padding: 10px 14px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .auth-container {
+    flex-direction: column;
+  }
+
+  .brand-panel,
+  .auth-panel {
+    padding: 40px;
+  }
+}

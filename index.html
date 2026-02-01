@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>VioTrack — Expense & Subscription Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== AUTH LANDING PAGE ========== -->
+  <div id="authSection" class="auth-container">
+
+    <!-- LEFT BRAND PANEL -->
+    <div class="brand-panel">
+      <div class="logo">
+        <span class="logo-icon">◈</span>
+        <span class="logo-text">VioTrack</span>
+      </div>
+
+      <p class="tagline">
+        Track expenses. <br />
+        Never miss subscriptions. <br />
+        Stay in control.
+      </p>
+
+      <div class="feature-list">
+        <p>✔ Secure JWT Authentication</p>
+        <p>✔ Expense & Subscription Tracking</p>
+        <p>✔ Renewal Alerts</p>
+      </div>
+    </div>
+
+    <!-- RIGHT AUTH PANEL -->
+    <div class="auth-panel">
+
+      <h2>Create Account</h2>
+      <input id="signupName" placeholder="Full Name" />
+      <input id="signupEmail" placeholder="Email Address" />
+      <input id="signupPassword" type="password" placeholder="Password" />
+      <button onclick="signup()">Register</button>
+
+      <div class="divider">OR</div>
+
+      <h2>Login</h2>
+      <input id="loginEmail" placeholder="Email Address" />
+      <input id="loginPassword" type="password" placeholder="Password" />
+      <button onclick="login()">Login</button>
+
+    </div>
+  </div>
+
+  <!-- ========== MAIN APP (HIDDEN INITIALLY) ========== -->
+  <div id="appSection" style="display:none">
+
+    <h1>Expense & Subscription Tracker</h1>
+
+    <button id="logoutBtn" onclick="logout()">Logout</button>
+
+    <section>
+      <h2>Expenses</h2>
+      <input id="title" placeholder="Expense title" />
+      <input id="amount" placeholder="Amount" />
+      <button onclick="addExpense()">Add Expense</button>
+      <ul id="expenseList"></ul>
+    </section>
+
+    <section>
+      <h2>Subscriptions</h2>
+      <input id="serviceName" placeholder="Service name" />
+      <input id="subAmount" placeholder="Amount" />
+      <input id="renewalDate" type="date" />
+      <button onclick="addSubscription()">Add Subscription</button>
+      <ul id="subscriptionList"></ul>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
