@@ -8,7 +8,7 @@ The application is built using a Node.js backend deployed on Render, a static fr
 
 ## 🚀 Live Demo
 
-- **Frontend (Netlify):** https://<your-netlify-url>.netlify.app  
+- **Frontend (Netlify):** (https://expense-trackerp126.netlify.app/)
 - **Backend API (Render):** https://expense-tracker-it1u.onrender.com  
 
 ---
