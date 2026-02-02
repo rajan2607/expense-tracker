@@ -63,4 +63,13 @@ The application is built using a Node.js backend deployed on Render, a static fr
 ---
 
 ## 📂 Project Structure
+expense-tracker/
+├── backend/
+│ ├── server.js
+│ ├── package.json
+│ └── models/
+├── index.html
+├── script.js
+├── style.css
+└── README.md
 
