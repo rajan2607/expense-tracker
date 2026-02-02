@@ -73,3 +73,19 @@ expense-tracker/
 ├── style.css
 └── README.md
 
+
+---
+
+## 📌 Future Improvements
+
+- Expense analytics and charts
+- Subscription renewal reminders
+- Role-based access control
+- React-based frontend
+
+---
+
+## 👤 Author
+
+**Rajan Pandey**  
+Aspiring Full-Stack / Data-Oriented Developer
